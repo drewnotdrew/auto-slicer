@@ -53,7 +53,7 @@ def main():
         if file != "README.md":
             print(f"Slicing {file}")
             slice_file(file, config)
-            print(f"Progress: {round(((index + 1) / num_files) * 100)}%")
+            print(f"Progress: {round(((index + 1) / (num_files - 1)) * 100)}%")
 
 
 if __name__ == "__main__":
